@@ -27,8 +27,8 @@
         <!-- Navigation -->
         <nav class="navigation" aria-label="Hovednavigation">
             <ul>
-                <li><a href="index.html" aria-current="page">Forside</a></li>
-                <li><a href="brevkassen.html">Brevkassen</a></li>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="brevkassen.html" aria-current="page">Brevkassen</a></li>
                 <li><a href="#onlinefællesskab">Online fællesskab</a></li>
                 <li><a href="#omos">Om os</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
@@ -45,8 +45,8 @@
             </summary>
             <nav aria-label="Burgermenu">
                 <ul>
-                    <li><a href="index.html" aria-current="page">Forside</a></li>
-                    <li><a href="brevkassen.html">Brevkassen</a></li>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="brevkassen.html" aria-current="page">Brevkassen</a></li>
                     <li><a href="#onlinefællesskab">Online fællesskab</a></li>
                     <li><a href="#omos">Om os</a></li>
                     <li><a href="kontakt.html">Kontakt</a></li>
@@ -69,9 +69,317 @@
             </div>
         </div>
     </header>
+
+    <!-- Hovedindhold -->
+    <main>
+        <!--Brevkasse hero -->
+        <section class="brevkasse-hero" aria-labelledby="brevkasse-overskrift">
+            <div class="brevkasse-hero-indhold">
+                <h1 id="brevkasse-overskrift">
+                    Velkommen til brevkassen.
+                </h1>
+                <p>
+                    Find inspiration til din lettere hverdag.
+                    Vi har samlet alt fra gode råd til relaterbare
+                    spørgsmål om livet som ung kvinde.
+                </p>
+                <a href="#dagens-råd" class="brevkasse-knap">
+                    Se dagens råd
+                </a>
+            </div>
+        </section>
+        <!-- Emner -->
+        <section class="brevkasse-kategorier" aria-label="Emner i brevkassen">
+            <div class="kategori-container">
+                <button type="button" class="kategori-knap aktiv">Alle</button>
+                <button type="button" class="kategori-knap">Stress</button>
+                <button type="button" class="kategori-knap">Følelser</button>
+                <button type="button" class="kategori-knap">Relationer</button>
+                <button type="button" class="kategori-knap">Krop og tvivl</button>
+                <button type="button" class="kategori-knap">Ensomhed</button>              
+            </div>
+        </section>
     
+        <!-- Brevkasse indhold -->
+         <section class="breve-sektion" aria-labelledby="breve-overskrift">
+            <!-- Introduktion til brevkassen -->
+             <div class="breve-intro">
+                <div class="breve-intro-tekst">
+                    <h2 id="breve-overskrift">
+                        Vores helt egen brevkasse.
+                    </h2>
+                    <p>
+                        Undre du dig over om andre har følt eller
+                        oplevet det samme som dig? Læs med her
+                        i brevkassen, måske du finder et svar du
+                        har manglet.
+                    </p>
+                </div>
+                <img src="/Billeder/brevkassen.jpg" alt="Kuvert med hjerte">
+            </div>
+            <!-- 3 breve -->
+            <article class="breve-container">
+                <!-- Brev 1 -->
+                <article class="brev-kort">
+                    <h3>“Ensom, hvor er det pinligt”</h3>
+                    <p>
+                        Jeg er 24 år, og føler mig som en lille pige
+                        i børnehaven som ingen gider lege med.
+                        Hvordan finder jeg nogen der vil være
+                        sammen med mig?
+                    </p>
+                    <a href="#brev-ensom" class="brev-knap">
+                        Læs resten her
+                    </a>
+                </article>
+
+                <!-- Brev 2 -->
+                <article class="brev-kort">
+                    <h3>“Han har ødelagt mig”</h3>
+                    <p>
+                        Første gang det skete, var omkring 1 år siden,
+                        men jeg blev med ham trods det hele,
+                        fordi jeg troede det var ægte kærlighed.
+                    </p>
+                    <a href="#brev-kærlighed" class="brev-knap">
+                        Se hele historien
+                    </a>
+                </article>
+
+                <!-- Brev 3 -->
+                <article class="brev-kort">
+                    <h3>“Tog jeg det forkerte valg?”</h3>
+                    <p>
+                        Hvordan ved jeg om det liv jeg bygger vil
+                        gøre mig lykkelig, hvis jeg føler mig så
+                        ulykkelig når jeg tager vigtige
+                        beslutninger om fremtiden?
+                    </p>
+                    <a href="#brev-fremtid" class="brev-knap">
+                        Læs svaret
+                    </a>
+                </article>
+            </div>
+            <!-- Stort brev med svaret -->
+            <article class="fremhævet-brev">
+                <!-- Brev fra bruger -->
+                <div class="brev-spørgsmål">
+                    <p class="brev-håndskrift">“Kære pusterum”</p>
+                    <h3>Jeg har desperat brug for hjælp...</h3>
+                    <p>
+                        Siden jeg gik på gymnasiet har jeg haft angst.
+                        Nogle gange bliver det så slemt at jeg får panikanfald.
+                        Jeg kan ikke styre det. I forgårs startede jeg på min
+                        finans bachelor, og skulle se min skole og møde min
+                        klasse for første gang. Vi skulle kort præsentere os selv
+                        foran klassen, og jeg kunne mærke mit hjerte banke så
+                        meget at jeg troede folk kunne se det pumpe ud af
+                        brystet på mig. Jeg fik et panikanfald under min
+                        præsentation, foran min nye klasse, på min første
+                        skoledag. Jeg har siden da ikke mødt op i skole.
+                        Føler bare jeg burde droppe ud, som om jeg
+                        nogensinde kan gennemføre en uddannelse med min
+                        angst. Hvad gør jeg?
+                    </p>
+                    <p>Venlig hilsen<br>Sofie</p>
+
+                </div>
+                <!-- Svar -->
+                <div class="brev-svar">
+                    <h3>Søde Sofie,</h3>
+                    <p>
+                        Tak for at dele dit problem med mig.
+                        Det første jeg vil fortælle dig er, ik’ giv op.
+                        Det ser måske sort ud lige nu, men at du turde
+                        at bede om hjælp, viser at du stadig har noget
+                        kampgejst tilbage i dig.
+                    </p>
+                    <p>
+                        Hvis jeg var dig, ville jeg fortælle lærerne og
+                        skolen om udfordringerne så de kan tage hensyn
+                        til dig og dine behov, selvom det kan være
+                        grænseoverskridende. Når din angst bliver for
+                        meget, så gå hjem og prøv igen dagen efter.
+                        Men ik’ giv op på dig selv.
+                    </p>
+                    <div class="brev-afsender">
+                        <p>Bedste hilsner<br>Linda .D. Larsen</p>
+                        <img
+                            src="Billeder/linda.jpg"
+                            alt="Billede af Linda, som besvarede brevet"
+                                >
+                    </div>
+                </div>
+            </article>
+            <!-- Flere breve -->
+            <a href="#flere-breve" class="flere-breve-knap">
+                Se flere breve
+            </a>
+        </section>
+        <!-- Dagens råd og online brevkasse -->
+        <section class="råd-online-sektion" aria-label="Dagens råd og online brevkasse">
+            <!-- Dagens råd -->
+            <article class="råd-boks" id="dagens-råd">
+                <h2>Dagens råd til dig</h2>
+                <h3>“Du behøver ikke at være ligesom alle andre”</h3>
+                <p>
+                    For at finde ud af hvem du er inderst inde,
+                    skal du turde at være en alle måske ikke kan lide.
+                    Sandheden er dog, at ligemeget hvor meget vi prøver
+                    at være en alle kan lide, så vil vi altid være
+                    ikke alles kop te. Så hvorfor bruger vi så meget
+                    energi på at være perfekte?
+                </p>
+                <p>
+                    Du kan stadig være sjov at feste med selvom du
+                    ikke drikker, du kan stadig være smuk selvom du
+                    ikke går med makeup, og der er stadig plads til
+                    dig selvom du ikke ligner alle andre.
+                    Find din egen glæde i livet og så følger
+                    ægte venskaber naturligt med.
+                </p>
+            </article>
+            <!-- Online brevkasse -->
+            <article class="online-boks" id="fællesskab">
+                <h2>Brevkassen besvares online</h2>
+                <p>
+                    Se med hver tirsdag kl. 19, når ugens nye
+                    brevkasse post oplæses og besvares.
+                    Der er plads til spørgsmål, girl-talk
+                    og mulighed for at skabe nye relationer.
+                </p>
+                <a href="kontakt.html" class="online-knap">
+                    Deltag her
+                </a>
+                <img
+                    src="/Billeder/Onlinemøde.jpg"
+                    alt="To kvinder taler sammen over et videoopkald"
+                >
+            </article>
+        </section>
+        <!-- Ugens citater -->
+        <section class="citater-sektion" aria-labelledby="citater-overskrift">
+            <!-- Overskriftsbjælken -->
+            <h2 id="citater-overskrift">
+                Ugens udvalgte citater
+            </h2>
+            <!-- DE TRE CITATER -->
+            <div class="citater-container">
+                <blockquote class="citat">
+                    <p>
+                        “Din værdi er ikke afhængig af andres
+                        manglende evne til at se dit værd.”
+                    </p>
+                </blockquote>
+                <blockquote class="citat">
+                    <p>
+                        “Hvis du kun fokuserer på forhindringerne
+                        så rammer du dem. Fokuser på vejen derhen.”
+                    </p>
+                </blockquote>
+                <blockquote class="citat">
+                    <p>
+                        “Hvad du ikke ændre i dit liv,
+                        vælger du at beholde i dit liv.”
+                    </p>
+                </blockquote>
+            </div>
+         <!-- Indsend citat knap -->
+            <a href="kontakt.html" class="citat-knap">
+                Indsend dit citat
+            </a>
+        </section>
+        <!-- Flere breve fra brevkassen -->
+        <section class="flere-breve-sektion" id="flere-breve" aria-label="Flere breve i brevkassen">
+            <!-- Venstre kolonne -->
+            <div class="flere-breve-kolonne">
+                <!-- Kontakt os -->
+                <div class="skriv-til-os-kort">
+                    <h2>Nyt i brevkassen hver uge.</h2>
+                    <p>
+                        Har du noget på hjertet? Del det med os her.
+                    </p>
+                    <a href="kontakt.html" class="skriv-til-os-knap">
+                        Skriv til os
+                    </a>
+                </div>
+                <!-- Brev om kategorien stress -->
+                <article class="flere-brev-kort">
+                    <span class="brev-kategori">Stress</span>
+                    <h3>“Jeg kan ikke mere”</h3>
+                    <p>
+                        Jeg har svært ved at sige nej. Jeg laver for
+                        mange planer, jeg sætter for mange mål og
+                        mit hoved er konstant fyldt med ting jeg skal
+                        gøre. Jeg kan ikke mere. Føler at jeg er ved
+                        at gå ned med stress, og ingen tager mig
+                        seriøs. Mine veninder siger bare at alle har
+                        det sådan, og min mor siger jeg skal tage
+                        mig sammen. Hvad gør jeg?
+                    </p>
+                    <hr>
+                    <p>
+                        Kære dig, det lyder forfærdeligt.
+                        Du er under meget mere pres end nogen kan klare.
+                        Tag en dag ad gangen, og prøv ikke at
+                        planlægge mere i fremtiden, indtil du har
+                        det bedre.
+                    </p>
+                </article>
+            </div>
+            <!-- Højre kolonne -->
+            <div class="flere-breve-kolonne">
+                <!-- Brev om kategorien krop og tvivl -->
+                <article class="flere-brev-kort">
+                    <span class="brev-kategori">Krop og tvivl</span>
+                    <h3>“Når jeg ser i spejlet, ser jeg ikke mig selv”</h3>
+                    <p>
+                        Da jeg var teenager var jeg en tynd pind,
+                        blev altid kaldt stankelben i de yngre klasser,
+                        men jeg elskede det, jeg havde det godt med mig selv.
+                        Nu er jeg 21 år, og har aldrig hadet min egen
+                        krop så meget som nu. Blev diagnosticeret
+                        med PCOS for et par måneder siden, så det
+                        er ikke bare lige til med en slankekur.
+                        Jeg føler mig som “hende den tykke”.
+                    </p>
+                    <hr>
+                    <p>
+                        Kære dig, det kan ikke være nemt at stå i.
+                        Husk din værdi ikke sidder i din vægt.
+                        PCOS kan gøre det svært at tabe sig,
+                        så ikke vær for hård ved dig selv.
+                        Du er elsket for den du er,
+                        ikke for hvordan du ser ud.
+                    </p>
+                </article>
+                <!-- Brev om kategorien relationer -->
+                <article class="flere-brev-kort">
+                    <span class="brev-kategori">Relationer</span>
+                    <h3>“Mig og min mor”</h3>
+                    <p>
+                        Min mor er syg, men nægter at få hjælp,
+                        så jeg passer hende i stedet for.
+                        Jeg har en drøm om at backpacke,
+                        men kan ikke gøre det fordi jeg har
+                        ansvar for min mor.
+                    </p>
+                    <hr>
+                    <p>
+                        Kære dig, det er en svær beslutning.
+                        Naturligvis er du bekymret for din mor,
+                        men på samme tid vil du følge din drøm.
+                        Jeg kan ikke vælge for dig,
+                        men jeg synes du skal lytte rigtig godt
+                        efter hvad dit hjerte fortæller.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
     <!-- Footer -->
-     <footer class="footer">
+    <footer class="footer">
         <div class="footer-container">
             <!-- Pusterum. -->
              <div class="footer-brand">
@@ -105,9 +413,9 @@
             <h3>Oplev</h3>
             <ul>
                 <li><a href="brevkassen.html">Brevkassen</a></li>
-                <li><a href="#raad">Gode råd</a></li>
+                <li><a href="#råd">Gode råd</a></li>
                 <li><a href="#events">Events</a></li>
-                <li><a href="#faellesskab">Fællesskab</a></li>
+                <li><a href="#fællesskab">Fællesskab</a></li>
             </ul>
         </nav>
         <!-- Nyhedsbrev -->
