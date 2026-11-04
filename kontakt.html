@@ -69,7 +69,165 @@
             </div>
         </div>
     </header>
-    
+
+    <!-- Hovedindhold -->
+    <main>
+    <!-- Kontakt side hero -->
+    <section class="kontakt-hero" aria-labelledby="kontakt-overskrift">
+        <!-- Hero tekst -->
+        <div class="kontakt-hero-tekst">
+            <h1 id="kontakt-overskrift">
+                Kontakt os
+            </h1>
+            <p>
+                Har du noget på hjertet,
+                brug for et råd, eller vil du
+                blot sige hej :)
+                Så se med herunder.
+            </p>
+        </div>
+        <!-- Hero billede -->
+        <div class="kontakt-hero-billede">
+            <img
+                src="/Billeder/Bakermillerpink.jpg"
+                alt="Kvinde i pink"
+                >
+        </div>
+    </section>
+    <!-- Kontaktformular -->
+    <section class="kontakt-formular-sektion" aria-labelledby="formular-overskrift">
+        <!-- Overskrift -->
+        <h2 id="formular-overskrift">
+            Udfyld kontakt formularen.
+        </h2>
+        <p class="formular-intro">
+            Vi bestræber os på at svare inden for 48 timer.
+        </p>
+        <!-- Formular -->
+        <form class="kontakt-formular">
+            <!-- Udfyld venstre side -->
+            <div class="formular-venstre">
+                <!-- Navn -->
+                <div class="formular-felt">
+                    <label for="navn">Dit navn</label>
+                    <input
+                        type="text"
+                        id="navn"
+                        name="navn"
+                        placeholder="Skriv dit navn her..."
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+                <!-- E-mail -->
+                <div class="formular-felt">
+                    <label for="email">Din e-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Din@email.dk..."
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+                <!-- Tekst og send knap -->
+                <div class="formular-bund">
+                    <p>
+                    Alle spørgsmål og historier er velkomne.
+                    Indsend også gerne citater der løfter humøret.
+                    </p>
+                    <button type="submit" class="formular-knap">
+                        Send besked
+                    </button>
+                </div>
+            </div>
+            <!-- Din besked: højre side -->
+            <div class="formular-højre">
+                <label for="besked" class="besked-label">
+                    “Kære pusterum”
+                </label>
+                <textarea
+                    id="besked"
+                    name="besked"
+                    placeholder="Skriv din besked her..."
+                    rows="10"
+                    required
+                ></textarea>
+            </div>
+        </form>
+    </section>
+    <!-- Flere steder du kan finde hjælp -->
+    <section class="hjælp-sektion" aria-labelledby="hjælp-overskrift">
+        <h2 id="hjælp-overskrift">
+            Andre steder du kan finde hjælp
+        </h2>
+        <p class="hjælp-intro">
+            Husk at bede om hjælp, når du har brug for det.
+        </p>
+        <!-- Psykiatrifonden -->
+        <article class="hjælp-kort">
+            <img
+                src="/Billeder/Psykiatrifonden.jpg"
+                alt="Psykiatrifonden logo"
+                class="hjælp-logo"
+            >
+            <div class="hjælp-tekst">
+                <h3>Psykiatrifonden</h3>
+                <p>Rådgivning og viden om mental helbred.</p>
+            </div>
+            <a
+                href="https://psykiatrifonden.dk/"
+                class="hjælp-knap"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Se mere
+            </a>
+        </article>
+        <!-- Headspace -->
+        <article class="hjælp-kort">
+            <img
+                src="/Billeder/Headspace.jpg"
+                alt="Headspace logo"
+                class="hjælp-logo"
+            >
+            <div class="hjælp-tekst">
+                <h3>Headspace</h3>
+                <p>Gratis rådgivning til unge voksne.</p>
+            </div>
+            <a
+                href="https://headspace.dk/"
+                class="hjælp-knap"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Få hjælp
+            </a>
+        </article>
+        <!-- Livslinien -->
+        <article class="hjælp-kort">
+            <img
+                src="/Billeder/Livslinien.jpg"
+                alt="Livslinien logo"
+                class="hjælp-logo"
+            >
+            <div class="hjælp-tekst">
+                <h3>Livslinien</h3>
+                <p>Akut hjælp hvis du har det rigtig svært.</p>
+            </div>
+            <a
+            href="https://www.livslinien.dk/"
+            class="hjælp-knap"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+                Læs om
+            </a>
+        </article>
+    </section>
+</main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
