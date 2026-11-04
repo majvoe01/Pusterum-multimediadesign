@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brevkasse kategorier</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brevkassen</title>
+    <!-- Link til CSS-fil -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Typografi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Caveat -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Logo -->
+         <a href="index.html" class="logo">
+            <img src="/Billeder/Pusterumlogo.jpg" alt="Logo">
+        </a>
+        <!-- Navigation -->
+        <nav class="navigation" aria-label="Hovednavigation">
+            <ul>
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="brevkassen.html" aria-current="page">Brevkassen</a></li>
+                <li><a href="#onlinefællesskab">Online fællesskab</a></li>
+                <li><a href="#omos">Om os</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <!-- Burgermenu til tablet og mobil-->
+         <details class="burger-menu">
+            <summary aria-label="Åbn og luk menuen">
+                <span class="burger-icon" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+                </span>
+            </summary>
+            <nav aria-label="Burgermenu">
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="brevkassen.html" aria-current="page">Brevkassen</a></li>
+                    <li><a href="#onlinefællesskab">Online fællesskab</a></li>
+                    <li><a href="#omos">Om os</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </details>
+        <!-- Søgefelt -->
+        <div class="søgefelt">
+            <input type="checkbox" id="vis-søg" class="søg-toggle">
+            <label for="vis-søg" class="søg-ikon">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="30" height="30">
+                    <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <path d="M16 16L21 21" fill="none" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <span class="visuelt-skjult">Vis eller skjul søgefelt</span>
+            </label>
+            <div class="søg-input">
+                <label for="søg" class="visuelt-skjult">Søg på Pusterum</label>
+                <input type="search" id="søg" name="søg" placeholder="Søg...">
+            </div>
+        </div>
+    </header>
+
+    <!-- Hovedindhold -->
+    <main>
+        <!--Brevkasse hero -->
+        <section class="brevkasse-hero" aria-labelledby="brevkasse-overskrift">
+            <div class="brevkasse-hero-indhold">
+                <h1 id="brevkasse-overskrift">
+                    Velkommen til brevkassen.
+                </h1>
+                <p>
+                    Find inspiration til din lettere hverdag.
+                    Vi har samlet alt fra gode råd til relaterbare
+                    spørgsmål om livet som ung kvinde.
+                </p>
+                <a href="#dagens-råd" class="brevkasse-knap">
+                    Se dagens råd
+                </a>
+            </div>
+        </section>
+        <!-- Brevkasse under udvikling -->
+        <section class="brevkasse-under-udvikling" aria-label="Brevkasse under udvikling">
+            <div class="brevkasse-under-udvikling-indhold">
+                <h1>Under udvikling :) </h1>
+                <button class="Tilbage-til-brevkassen" onclick="window.location.href='brevkassen.html'">
+                    Tilbage til Brevkassen
+                </button>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Pusterum. -->
+             <div class="footer-brand">
+                <h2>Pusterum.</h2>
+                <p>Mental velvære for<br>unge kvinder.</p>
+                <a href="#https://www.instagram.com/url..."
+                class="instagram-link"
+                aria-label="Besøg Pusterum på Instagram">
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="5"
+                          fill="none" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="12" cy="12" r="4"
+                            fill="none" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="18" cy="6" r="1.2" fill="currentColor"/>
+                    </svg>
+                </a>
+                <p class="copyright">© 2026 Pusterum.dk</p>
+            </div>
+            <!-- Om Pusterum -->
+            <nav class="footer-links" aria-label="Om Pusterum">
+                <h3>Om Pusterum</h3>
+                <ul>
+                    <li><a href="#omos">Om os</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="#privatlivspolitik">Privatlivspolitik</a></li>
+                </ul>
+            </nav>
+            <!-- Oplev -->
+            <nav class="footer-links" aria-label="Oplev">
+                <h3>Oplev</h3>
+                <ul>
+                    <li><a href="brevkassen.html">Brevkassen</a></li>
+                    <li><a href="#råd">Gode råd</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#fællesskab">Fællesskab</a></li>
+                </ul>
+            </nav>
+            <!-- Nyhedsbrev -->
+            <div class="footer-nyhedsbrev">
+                <h3>Få inspiration hver måned</h3>
+                <p>
+                    Modtag vores nyhedsbrev for nye svar fra brevkassen,
+                    råd og kommende events.
+                </p>
+                <form class="nyhedsbrev-form">
+                    <label for="nyhedsbrev-email" class="visuelt-skjult">
+                        Din e-mailadresse
+                    </label>
+                    <input
+                        type="email"
+                        id="nyhedsbrev-email"
+                        name="email"
+                        placeholder="Din e-mail"
+                        autocomplete="email"
+                        required
+                    >
+                    <button type="submit">Tilmeld</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

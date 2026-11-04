@@ -313,7 +313,7 @@ header {
 }
 /* Tastaturfokus */
 .kort a:focus-visible {
-    outline: 3px solid var(--baker-miller-pink);
+    outline: 3px solid var(--mørk);
     outline-offset: 4px;
 }
 /* Tablet */
@@ -643,7 +643,7 @@ header {
 .brevkasse-knap:hover {
     background-color: var(--afdæmpet-rosa);
     color: var(--lys-rosa);
-}
+}   
 
 /* Tastaturfokus */
 .brevkasse-knap:focus-visible {
@@ -668,8 +668,8 @@ header {
 
 /* Kategori-knapper */
 .kategori-knap {
-    min-height: 48px;
-    padding: 8px 12px;
+    min-height: 45px;
+    padding: 10px 12px;
     border: 2px solid var(--mørk);
     border-radius: 18px;
     background-color: var(--lys-rosa);
@@ -679,6 +679,7 @@ header {
     text-align: left;
     cursor: pointer;
     box-shadow: 0 3px 4px rgba(64, 32, 43, 0.2);
+    text-decoration: none;
 }
 
 /* Aktiv kategori */
@@ -689,15 +690,13 @@ header {
 
 /* Hover */
 .kategori-knap:hover {
-    background-color: var(--lys-rosa);
-}
-.kategori-knap.aktiv:hover {
-    background-color: var(--afdæmpet-rosa);
+    background-color: var(--mørk);
+    color: var(--lys-rosa);
 }
 
 /* Tastaturfokus */
 .kategori-knap:focus-visible {
-    outline: 3px solid var(--baker-miller-pink);
+    outline: 3px solid var(--mørk);
     outline-offset: 4px;
 }
 
@@ -1276,7 +1275,7 @@ html {
 
 /* Tastaturfokus */
 .citat-knap:focus-visible {
-    outline: 3px solid var(--baker-miller-pink);
+    outline: 3px solid var(--mørk);
     outline-offset: 4px;
 }
 
@@ -1520,8 +1519,8 @@ html {
     overflow: hidden;
     background: linear-gradient(
         to bottom,
-        var(--baker-miller-pink) 0%,
-        var(--rosa) 50%,
+        var(--baker-miller-pink) 10%,
+        var(--rosa) 75%,
         var(--creme) 100%
     );
     border-radius: 0 0 10px 10px;
@@ -1623,7 +1622,7 @@ html {
     max-width: 1280px;
     margin: 40px auto 80px;
     padding: 40px;
-    background-color: var(--lys-rosa);
+    background-color: var(--rosa);
     border-radius: 12px;
     box-shadow: 0 3px 10px rgba(64, 32, 43, 0.18);
 }
@@ -1697,7 +1696,7 @@ html {
 /* Placeholder */
 .formular-felt input::placeholder,
 .formular-højre textarea::placeholder {
-    color: var(--afdæmpet-rosa);
+    color: var(--mørk);
     opacity: 1;
 }
 
@@ -1734,7 +1733,8 @@ html {
 
 /* Hover */
 .formular-knap:hover {
-    background-color: var(--rosa);
+    background-color: var(--mørk);
+    color: var(--lys-rosa);
 }
 
 /* Beskedfelt */
@@ -1875,7 +1875,7 @@ html {
     max-width: 1280px;
     margin: 40px auto 80px;
     padding: 40px;
-    background-color: var(--lys-rosa);
+    background-color: var(--rosa);
     border-radius: 12px;
     box-shadow: 0 3px 10px rgba(64, 32, 43, 0.18);
 }
@@ -1926,8 +1926,8 @@ html {
     flex-shrink: 0;
     width: 95px;
     height: 95px;
-    object-fit: contain;
-    background-color: var(--lys-rosa);
+    object-fit: cover;
+    object-position: center;
     border-right: 1px solid var(--mørk);
     border-radius: 7px 0 0 7px;
 }
@@ -1975,7 +1975,8 @@ html {
 
 /* Hover */
 .hjælp-knap:hover {
-    background-color: var(--rosa);
+    background-color: var(--mørk);
+    color: var(--lys-rosa);
 }
 
 /* Tastaturfokus */
@@ -2207,4 +2208,31 @@ html {
         white-space: normal;
     }
 }
+/* Under udvikling */
+.Tilbage-til-brevkassen {
+    min-height: 48px;
+    padding: 8px 12px;
+    border: 2px solid var(--mørk);
+    border-radius: 18px;
+    background-color: var(--creme);
+    color: var(--mørk);
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 17px;
+    text-align: left;
+    cursor: pointer;
+    box-shadow: 0 3px 4px rgba(64, 32, 43, 0.2);
+    margin-bottom: 20px;
+}
+.brevkasse-under-udvikling-indhold {
+    margin-left: 20px;
+}
+/* Hover */
+.Tilbage-til-brevkassen:hover {
+    background-color: var(--baker-miller-pink);
+}
 
+/* Tastaturfokus */
+.Tilbage-til-brevkassen:focus-visible {
+    outline: 3px solid var(--mørk);
+    outline-offset: 4px;
+}
