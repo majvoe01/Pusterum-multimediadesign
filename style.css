@@ -641,7 +641,7 @@ header {
 
 /* Hover */
 .brevkasse-knap:hover {
-    background-color: var(--afdæmpet-rosa);
+    background-color: var(--mørk);
     color: var(--lys-rosa);
 }   
 
@@ -2210,8 +2210,9 @@ html {
 }
 /* Under udvikling */
 .Tilbage-til-brevkassen {
+    display: inline-block;
     min-height: 48px;
-    padding: 8px 12px;
+    padding: 12px 12px;
     border: 2px solid var(--mørk);
     border-radius: 18px;
     background-color: var(--creme);
@@ -2222,10 +2223,20 @@ html {
     cursor: pointer;
     box-shadow: 0 3px 4px rgba(64, 32, 43, 0.2);
     margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: 400;
+}
+.Tilbage-til-brevkassen:visited {
+    color: var(--mørk);
 }
 .brevkasse-under-udvikling-indhold {
     margin-left: 20px;
+    color: var(--mørk);
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
 }
+
 /* Hover */
 .Tilbage-til-brevkassen:hover {
     background-color: var(--baker-miller-pink);
@@ -2236,3 +2247,69 @@ html {
     outline: 3px solid var(--mørk);
     outline-offset: 4px;
 }
+
+/* Tilføjet til zoom indstilling for burgermenu og søgefelt */ 
+@media (max-width: 1100px) {
+    header {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 12px;
+    }
+    header .logo {
+        flex: 0 1 auto;
+        min-width: 0;
+        margin-right: auto;
+    }
+    header .logo img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .søgefelt {
+        order: 2;
+        flex: 0 0 auto;
+        margin: 0;
+    }
+    .burger-menu {
+        order: 3;
+        flex: 0 0 auto;
+        margin: 0;
+    }
+    .burger-menu summary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        list-style: none;
+    }
+    .burger-menu summary::-webkit-details-marker {
+        display: none;
+    }
+    .burger-menu summary:hover,
+    .burger-menu[open] summary {
+        background-color: var(--baker-miller-pink);
+    }
+    .burger-menu summary:focus-visible {
+        outline: 3px solid var(--mørk);
+        outline-offset: 4px;
+    }
+}
+@media (max-width: 400px) {
+    header {
+        gap: 8px;
+    }
+    header .logo {
+        max-width: calc(100% - 116px);
+    }
+    .søgefelt,
+    .burger-menu {
+        flex-shrink: 0;
+    }
+}
+    header:has(.burger-menu[open]) .søgefelt {
+    display: none;
+    }
